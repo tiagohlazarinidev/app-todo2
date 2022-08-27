@@ -100,11 +100,26 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
   "cli": {
-    "analytics": "435f9821-1123-4978-ac16-1b2b9ad127b8"
+    "analytics": "435f9821-1123-4978-ac16-1b2b9ad127b8",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
